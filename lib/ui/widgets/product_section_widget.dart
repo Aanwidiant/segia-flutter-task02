@@ -26,12 +26,19 @@ class ProductSectionWidget extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Papper Bag', style: AppTextStyles.heading1),
+                Text(
+                  'Papper Bag',
+                  style: AppTextStyles.heading1.copyWith(
+                    color: AppColors.textPrimary,
+                  ),
+                ),
                 const SizedBox(height: 8.0),
                 Text(
                   'This papper bag is perfect for your daily shopping needs. '
-                      'Made from recyclable materials and designed with both style and sustainability in mind, ',
-                  style: AppTextStyles.body,
+                  'Made from recyclable materials and designed with both style and sustainability in mind.',
+                  style: AppTextStyles.body.copyWith(
+                    color: AppColors.textSecondary,
+                  ),
                 ),
                 const SizedBox(height: 16.0),
                 ElevatedButton(
@@ -46,7 +53,7 @@ class ProductSectionWidget extends StatelessWidget {
                   ),
                   child: const Text(
                     'View Details',
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: AppColors.snowWhite),
                   ),
                 ),
               ],

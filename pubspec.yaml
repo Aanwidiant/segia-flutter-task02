@@ -68,6 +68,9 @@ flutter:
     - assets/images/product_5.jpg
     - assets/images/product_6.jpg
     - assets/images/product_7.jpg
+    - assets/images/product_8.jpg
+    - assets/images/team_banner.jpg
+    - assets/images/company_banner.jpg
     - assets/images/team_1.jpg
     - assets/images/team_2.jpg
     - assets/images/team_3.jpg

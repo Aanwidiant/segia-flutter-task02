@@ -14,12 +14,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: AppColors.background,
+        color: AppColors.primaryLight,
         child: SingleChildScrollView(
           child: Column(
             children: const [
               NavbarWidget(),
-              ImageJumbotronWidget(),
+              ImageJumbotronWidget(
+                imagePath: 'assets/images/image_jumbotron.jpg',
+              ),
               ProductSectionWidget(),
               ProductBannerWidget(),
               AboutSectionWidget(),

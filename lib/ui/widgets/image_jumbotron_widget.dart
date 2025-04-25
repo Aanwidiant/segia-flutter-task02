@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:segia_bootcamp_task02/common/app_colors.dart';
 
 class ImageJumbotronWidget extends StatelessWidget {
-  const ImageJumbotronWidget({super.key});
+  final String imagePath;
+
+  const ImageJumbotronWidget({super.key, required this.imagePath});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +12,7 @@ class ImageJumbotronWidget extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(16.0),
         child: Image.asset(
-          'assets/images/image_jumbotron.jpg',
+          imagePath,
           height: 300,
           width: double.infinity,
           fit: BoxFit.cover,

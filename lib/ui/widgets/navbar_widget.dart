@@ -29,10 +29,18 @@ class NavbarWidget extends StatelessWidget {
               ),
             ),
             const Spacer(),
-            _NavItem(title: 'Product', route: '/products', currentRoute: currentRoute),
-            const SizedBox(width: 10),
-            _NavItem(title: 'About', route: '/about', currentRoute: currentRoute),
-            const SizedBox(width: 10),
+            _NavItem(
+              title: 'Product',
+              route: '/products',
+              currentRoute: currentRoute,
+            ),
+            const SizedBox(width: 6),
+            _NavItem(
+              title: 'About',
+              route: '/about',
+              currentRoute: currentRoute,
+            ),
+            const SizedBox(width: 6),
             _NavItem(title: 'News', route: '/news', currentRoute: currentRoute),
           ],
         ),
@@ -46,7 +54,11 @@ class _NavItem extends StatelessWidget {
   final String route;
   final String? currentRoute;
 
-  const _NavItem({required this.title, required this.route, required this.currentRoute});
+  const _NavItem({
+    required this.title,
+    required this.route,
+    required this.currentRoute,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -62,7 +74,8 @@ class _NavItem extends StatelessWidget {
         title,
         style: AppTextStyles.body.copyWith(
           fontWeight: isActive ? FontWeight.bold : FontWeight.w600,
-          color: isActive ? Colors.black : Colors.white,
+          color: isActive ? AppColors.textPrimary : AppColors.snowWhite,
+          fontSize: 18.0,
         ),
       ),
     );

@@ -14,7 +14,7 @@ class FooterWidget extends StatelessWidget {
         children: [
           Text(
             'Follow us on social media',
-            style: AppTextStyles.body.copyWith(color: AppColors.surface),
+            style: AppTextStyles.body.copyWith(color: AppColors.snowWhite),
           ),
           const SizedBox(height: 6),
           Row(
@@ -36,6 +36,7 @@ class FooterWidget extends StatelessWidget {
 class _SocialIcon extends StatelessWidget {
   final String assetPath;
   final VoidCallback onTap;
+
   const _SocialIcon(this.assetPath, this.onTap);
 
   @override
@@ -45,7 +46,7 @@ class _SocialIcon extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: AppColors.snowWhite,
           borderRadius: BorderRadius.circular(12),
         ),
         child: Image.asset(
